@@ -14,7 +14,7 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    const phoneNumber = "971553782242";
+    const phoneNumber = "971507528911";
 
     const orderMessage =
         `Hello, I want to place an order.%0A%0A` +
