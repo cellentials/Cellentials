@@ -229,29 +229,57 @@ button {
     padding: 60px 40px;
 }
 
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 80px 60px;
+}
+
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; /* spreads columns like Coursera */
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .footer-column {
-    margin-bottom: 20px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-column p {
+  color: #aaa;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .footer-column a {
-    color: #ccc;
-    text-decoration: none;
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .footer-column a:hover {
-    color: white;
+  color: #fff;
 }
 
+/* bottom text */
 .footer-bottom {
-    margin-top: 40px;
-    text-align: center;
-    color: #777;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
 }
 
 /* CONTACT PAGE */
