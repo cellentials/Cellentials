@@ -505,3 +505,7 @@ body {
 .contact-form button:hover {
   opacity: 0.8;
 }
+    .footer-column a {
+  display: block;
+  margin-bottom: 8px;
+}
