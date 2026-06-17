@@ -468,4 +468,12 @@ body {
 .contact-form button:hover {
   opacity: 0.8;
 }
+input, textarea {
+  color: #111; /* makes typed text visible */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999; /* softer placeholder */
+}
 
