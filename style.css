@@ -423,57 +423,86 @@ body {
   letter-spacing: 2px;
 }
 
+/* ===== CONTACT PAGE FIXED ===== */
+
+.navbar {
+  padding: 30px 60px;
+  text-align: left;
+}
+
+.logo {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
 /* CONTACT SECTION */
 .contact {
-  text-align: center;
-  padding: 80px 20px;
+  max-width: 700px;
+  margin: 120px auto;
+  padding: 0 20px;
+  text-align: left;
 }
 
 .contact h1 {
-  font-size: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
   margin-bottom: 10px;
 }
 
 .contact p {
-  color: #555;
+  color: #5c5146;
+  margin-bottom: 10px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  margin-bottom: 40px;
 }
 
 /* FORM */
 .contact-form {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 250px;
-  padding: 12px;
-  margin: 10px;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cfc6bb;
   background: transparent;
+  font-size: 15px;
+  outline: none;
+  color: #111; /* FIX: typing text visible */
 }
 
+/* placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9c9084;
+}
+
+/* textarea size */
 .contact-form textarea {
-  width: 520px;
-  height: 120px;
+  height: 140px;
+  resize: none;
 }
 
+/* BUTTON */
 .contact-form button {
-  padding: 12px 30px;
+  padding: 16px;
+  background: #111;
+  color: #f7f1e8;
   border: none;
-  background: black;
-  color: white;
+  letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
   opacity: 0.8;
 }
-input, textarea {
-  color: #111; /* makes typed text visible */
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #999; /* softer placeholder */
-}
-
