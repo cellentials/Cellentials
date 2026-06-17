@@ -106,7 +106,7 @@
         <p class="order-text">Fill in your details below.</p>
 
    
-      <form action="https://formspree.io/f/xeewwalz" method="POST">
+     <form action="https://formspree.io/f/xeewwalz" method="POST">
 
   <input type="text" name="name" placeholder="Your name" required>
 
@@ -116,9 +116,13 @@
 
   <input type="number" name="quantity" placeholder="Quantity" required>
 
-  <!-- IMPORTANT FIXES -->
-  <input type="hidden" name="_captcha" value="false">
+  <!-- REQUIRED MESSAGE FIELD -->
+  <textarea name="message" placeholder="Your message" required></textarea>
+
+  <!-- IMPORTANT HIDDEN FIELDS -->
+  <input type="hidden" name="_replyto" value="email">
   <input type="hidden" name="_subject" value="New Order from Cellentials">
+  <input type="hidden" name="_captcha" value="false">
 
   <button type="submit">Place Order</button>
 
