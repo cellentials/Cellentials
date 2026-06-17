@@ -364,8 +364,7 @@ button {
     .footer-row {
         flex-direction: column;
         gap: 10px;
-    }
-}
+    
 }
 .footer {
   background-color: #111;
