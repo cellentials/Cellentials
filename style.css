@@ -365,4 +365,23 @@ button {
         flex-direction: column;
         text-align: center;
     }
+    .order-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 40px;
+  background-color: #e7dccd;
+  color: #111111;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: transparent;
+  color: #e7dccd;
+  border: 1px solid #e7dccd;
+}
 }
