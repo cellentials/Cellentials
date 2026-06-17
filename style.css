@@ -19,28 +19,38 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    padding-top: 80px;
+}
+
+/* NAVBAR */
 /* NAVBAR */
 nav {
-    position: absolute;
+    position: fixed; /* changed from absolute */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 28px 60px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
+
+    background-color: rgba(247, 241, 232, 0.9); /* beige */
+    backdrop-filter: blur(6px); /* luxury glass effect */
 }
 
+/* LOGO */
 .logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 32px;
     font-weight: 600;
-    color: #f7f1e8;
+    color: #111; /* changed to dark */
     margin: 0;
     letter-spacing: 1px;
 }
 
+/* NAV LINKS */
 nav ul {
     display: flex;
     gap: 35px;
@@ -51,10 +61,15 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #f7f1e8;
+    color: #111; /* changed to dark */
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+/* HOVER EFFECT */
+nav ul li a:hover {
+    opacity: 0.6;
 }
 
 /* HERO */
