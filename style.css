@@ -341,6 +341,33 @@ button {
   border: 1px solid #e7dccd;
 
 }
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 40px;
+  background-color: transparent;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #111;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #111;
+  color: #f7f1e8;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact p {
+  color: #5c5146;
+  line-height: 1.8;
+}
 .policy {
   padding: 140px 20px 100px;
   background-color: #f7f1e8;
