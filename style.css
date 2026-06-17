@@ -5,15 +5,10 @@ html {
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 body {
+    margin: 0;
     background-color: #f7f1e8;
-    color: #111111;
+    color: #111;
     font-family: 'Inter', sans-serif;
 }
 
@@ -27,7 +22,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
 }
 
 .logo {
@@ -47,38 +41,20 @@ nav {
     align-items: center;
 }
 
-/* FEATURES */
-.features {
-    background-color: #efe5d8;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 30px;
-    flex-wrap: wrap;
-}
-
 /* PRODUCT */
 .product {
     padding: 100px 70px;
 }
 
 .product-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
 }
 
-/* ABOUT */
-.about {
-    text-align: center;
-    padding: 110px 30px;
-}
-
 /* ORDER */
 .order {
-    background-color: #111111;
+    background-color: #111;
     color: #f7f1e8;
     text-align: center;
     padding: 60px 20px;
@@ -98,37 +74,66 @@ button {
     border: none;
 }
 
-/* FOOTER */
+/* ===== FOOTER (FINAL CLEAN VERSION) ===== */
+
 .footer {
     background: #111;
-    color: #eee;
-    padding: 60px 40px;
+    color: #f7f1e8;
+    padding: 80px 60px;
     font-family: 'Cormorant Garamond', serif;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    max-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 15px;
 }
 
 .footer-column a {
     display: block;
-    color: #ccc;
+    color: #cfc6bb;
     text-decoration: none;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footer-column a:hover {
     color: white;
 }
 
-/* CONTACT PAGE */
+.footer-bottom {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+/* ===== CONTACT PAGE ===== */
+
 .contact {
     max-width: 700px;
     margin: 120px auto;
     padding: 0 20px;
     text-align: left;
+}
+
+.contact h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form input,
@@ -149,16 +154,13 @@ button {
     color: #f7f1e8;
 }
 
-/* MOBILE FIX */
+/* ===== MOBILE ===== */
+
 @media (max-width: 768px) {
 
     nav {
-        padding: 20px;
         flex-direction: column;
-    }
-
-    .hero h1 {
-        font-size: 60px;
+        padding: 20px;
     }
 
     .product-container {
@@ -169,7 +171,7 @@ button {
     .footer-container {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+        align-items: center;
     }
 
 }
