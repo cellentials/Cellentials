@@ -106,13 +106,19 @@
         <p class="order-text">Fill in your details below.</p>
 
    
-        <form action="https://formspree.io/f/xeewwalz" method="POST">
-            <input type="text" id="name" placeholder="Your name">
-            <input type="email" id="email" placeholder="Your email">
-            <input type="text" id="address" placeholder="Your address">
-            <input type="number" id="quantity" placeholder="Quantity">
-            <button type="submit">Place Order</button>
-        </form>
+       <form action="https://formspree.io/f/xeewwalz" method="POST">
+
+  <input type="text" name="name" placeholder="Your name" required>
+
+  <input type="email" name="email" placeholder="Your email" required>
+
+  <input type="text" name="address" placeholder="Your address" required>
+
+  <input type="number" name="quantity" placeholder="Quantity" required>
+
+  <button type="submit">Place Order</button>
+
+</form>
 
         <p id="message"></p>
     </section>
